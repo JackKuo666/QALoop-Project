@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="QALoop: a human-in-the-loop data production system for agricultural question answering.">
+  <meta name="theme-color" content="#102b2b">
+  <title>QALoop | Agricultural QA Data Production</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="wordmark" href="#top" aria-label="QALoop home"><span class="mark" aria-hidden="true">Q</span><span>QALoop</span></a>
+      <nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#workflow">Workflow</a><a href="#demonstration">Demo</a><a href="#resources">Resources</a></nav>
+      <a class="nav-github" href="https://github.com/JackKuo666/QALoop">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> HUMAN-IN-THE-LOOP DATA PRODUCTION</p>
+          <h1 id="hero-title">From agricultural knowledge to <em>expert-guided QA.</em></h1>
+          <p class="hero-lead">QALoop brings heterogeneous sources, specialized generation pipelines, and expert feedback together in an agricultural question-answer data production system.</p>
+          <div class="actions"><a class="button button-primary" href="https://huggingface.co/spaces/jackkuo/QALoop">Explore the demo</a><a class="button button-ghost" href="https://github.com/JackKuo666/QALoop">View source code</a></div>
+          <p class="hero-note">Plant breeding case study <span>•</span> Source-adaptive generation <span>•</span> Expert-involved development</p>
+        </div>
+        <div class="hero-visual" aria-label="QALoop workflow summary">
+          <div class="visual-heading"><span class="visual-kicker">THE QALOOP WORKFLOW</span><span class="visual-dot"></span></div>
+          <div class="visual-node"><span class="node-icon">01</span><div><strong>Heterogeneous knowledge</strong><small>Papers, experts, patents, reports &amp; more</small></div></div>
+          <div class="connector" aria-hidden="true"></div>
+          <div class="visual-node"><span class="node-icon">02</span><div><strong>Source-adaptive QA pipelines</strong><small>Generation, shared records &amp; quality control</small></div></div>
+          <div class="connector" aria-hidden="true"></div>
+          <div class="visual-node highlight"><span class="node-icon">03</span><div><strong>Expert review &amp; revision</strong><small>Sampled audit informs pipeline development</small></div></div>
+          <div class="visual-footer"><span>DATA PRODUCTION</span><span>EXPERT FEEDBACK</span><span>EVALUATION</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="metrics" aria-label="Reported case study scale"><div class="container metrics-grid"><div><strong>7</strong><span>production-scale QA pipelines</span></div><div><strong>245,958</strong><span>reported QA records produced</span></div><div><strong>1,434</strong><span>questions in the evaluation set</span></div><p>Reported in the plant-breeding case study. Experts assess samples rather than every produced record.</p></div></section>
+    <section class="section" id="overview"><div class="container overview-grid"><div><p class="section-label">THE CHALLENGE</p><h2>Specialized knowledge needs a production process built around its sources.</h2></div><div class="prose"><p>Agricultural knowledge lives in research articles, expert questions, textbooks, wiki entries, patents, and germplasm reports. Each source presents a different structure and demands a different approach to question generation.</p><p>QALoop organizes these inputs into a shared workflow, connecting generation and quality checks with expert review and subsequent pipeline revision.</p><div class="source-list" aria-label="Source types"><span>Expert questions</span><span>Research literature</span><span>Patents</span><span>Germplasm reports</span><span>Books &amp; wiki</span></div></div></div></section>
+    <section class="section workflow-section" id="workflow"><div class="container"><div class="section-heading"><div><p class="section-label">HOW IT WORKS</p><h2>A feedback loop for data production.</h2></div><p>From source materials to candidate QA, expert observations inform the next round of development.</p></div><div class="workflow-grid"><article><span class="step-number">01</span><h3>Route &amp; generate</h3><p>Source-adaptive pipelines produce candidate QA using strategies suited to the structure of the input.</p></article><article><span class="step-number">02</span><h3>Organize &amp; filter</h3><p>Question-answer records use a shared format, with provenance and other metadata where available.</p></article><article><span class="step-number">03</span><h3>Review samples</h3><p>Domain experts assess sampled outputs and provide scores, error labels, and comments.</p></article><article><span class="step-number">04</span><h3>Revise &amp; evaluate</h3><p>Developers use feedback to revise pipelines; a source-separated evaluation set supports downstream assessment.</p></article></div><div class="loop-note"><span aria-hidden="true">↻</span><p>Expert feedback supports pipeline development and quality auditing across subsequent batches.</p></div></div></section>
+    <section class="section demo-section" id="demonstration"><div class="container demo-grid"><div><p class="section-label">EXPLORE QALOOP</p><h2>See the system in action.</h2><p>Explore the demonstration interface and the implementation. A project walkthrough video will be added when available.</p><div class="actions"><a class="button button-dark" href="https://huggingface.co/spaces/jackkuo/QALoop">Open the demo</a><a class="button button-outline" href="https://github.com/JackKuo666/QALoop">Browse the code</a></div></div><div class="video-placeholder" aria-label="Demonstration video not yet available"><div class="play-symbol" aria-hidden="true">▶</div><strong>System walkthrough</strong><span>Video coming soon</span></div></div></section>
+    <section class="section resources-section" id="resources"><div class="container"><p class="section-label">PROJECT RESOURCES</p><div class="section-heading"><h2>Explore the project.</h2><p>Resources for understanding the workflow and trying the system.</p></div><div class="resource-grid"><a class="resource" href="https://huggingface.co/spaces/jackkuo/QALoop"><span class="resource-type">INTERACTIVE</span><h3>System demo</h3><p>Explore the QALoop interface on Hugging Face Spaces.</p><span class="resource-link">Open demo ↗</span></a><a class="resource" href="https://github.com/JackKuo666/QALoop"><span class="resource-type">IMPLEMENTATION</span><h3>Code &amp; examples</h3><p>Browse the system repository and available sample materials.</p><span class="resource-link">View repository ↗</span></a><div class="resource muted"><span class="resource-type">RESEARCH</span><h3>Paper</h3><p>Details will be added when the manuscript is ready to share.</p><span class="resource-link">Coming soon</span></div></div></div></section>
+  </main>
+  <footer><div class="container footer-inner"><span class="footer-brand">QALoop</span><span>Agricultural QA construction and evaluation</span><a href="https://github.com/JackKuo666/QALoop-Project">Project page source</a></div></footer>
+</body></html>
